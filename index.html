@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>重生计时器</title>
+</head>
+<body>
+    <h1>第<span id="day">0</span>天拒绝摆烂</h1>
+    <script>
+        // 自动计算从2025-07-08开始的天数
+        const start = new Date('2025-07-08');
+        const today = new Date();
+        document.getElementById('day').innerText = 
+            Math.floor((today - start) / (1000*60*60*24));
+    </script>
+</body>
+</html>
